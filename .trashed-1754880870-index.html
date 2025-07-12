@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>NEET XP Tracker by S.R.A.</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <img src="copilot_image.jpeg" alt="Doctor Logo" class="logo">
+    <div>
+      <h1>NEET XP Tracker</h1>
+      <p class="tagline">🎯 Powering Your Prep with Precision</p>
+    </div>
+  </header>
+
+  <form id="task-form">
+    <input type="date" id="task-date" required>
+    <select id="subject">
+      <option value="Physics">🔭 Physics</option>
+      <option value="Chemistry">⚗️ Chemistry</option>
+      <option value="Biology">🧬 Biology</option>
+    </select>
+    <input type="text" id="chapter" placeholder="Chapter Name" required>
+    <select id="activity">
+      <option value="Lecture">🎓 Lecture</option>
+      <option value="Revision">🔁 Revision</option>
+      <option value="Practice">📝 Practice</option>
+      <option value="Homework">📚 Homework</option>
+      <option value="Test">🧪 Test</option>
+    </select>
+    <input type="number" id="hours" placeholder="Hours Studied" min="0" required>
+    <button type="submit">➕ Add Task</button>
+  </form>
+
+  <table id="tracker">
+    <thead>
+      <tr>
+        <th>Date</th>
+        <th>Subject</th>
+        <th>Chapter</th>
+        <th>Activity</th>
+        <th>Hours</th>
+        <th>XP</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <p id="total-xp">Total XP: 0</p>
+  <div id="xp-bar"><div id="xp-fill"></div></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
